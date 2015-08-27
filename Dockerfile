@@ -22,6 +22,6 @@ COPY XTerm /etc/X11/app-defaults/XTerm
 COPY noVNC /noVNC/
 COPY supervisord.conf /etc/supervisor/conf.d/supervisord.conf
 
-EXPOSE 6080
+EXPOSE 5900 6080
 
 CMD ["/usr/bin/supervisord"]
